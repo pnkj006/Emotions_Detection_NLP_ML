@@ -1,6 +1,11 @@
 from flask import Flask, render_template, request
 import pickle
 import os
+import nltk
+
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("punkt_tab")
 
 from preprocess import preprocess
 
